@@ -117,7 +117,86 @@ print(myorder.format(quantity, itemno, price))
 txt = "We are the so-called \"Vikings\" from the north."
 print(txt)
 
+# List
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+for x in thislist: #loop through a list
+	print(x)
 
 
+# Tuple
+thistuple = ("apple", "banana", "cherry")
+# can't add new items but can be added by chinging it first to list add item then convert back
+
+# Set
+thisset = {"apple", "banana", "cherry"}
+thisset2 = {"1", "2", "3"}
+thisset3 = thisset.union(thisset2)
+print(thisset3)
+
+# Dictionary
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": "1964"
+}
+for x, y in thisdict.items():
+    print(x + " : " + y)
 
 
+#If elif else
+a = 2
+b = 330
+
+print("A > B") if a > b else print("B > A")
+
+# three conditions
+a = 330
+b = 330
+
+print("A > B") if a > b else print("A = B") if a == b else print("B > A")
+
+# While/For loop
+#range
+for x in range(2, 30, 3):
+  print(x) 
+
+# Function
+def my_function(country = "Norway"):
+  print("I am from " + country)
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
+#Recursion
+
+# Lambda
+def myfunc(n):
+  return lambda a : a * n
+mysingle = myfunc(1)
+mydoubler = myfunc(2)
+mytripler = myfunc(3)
+print(mysingle(11))
+print(mydoubler(11))
+print(mytripler(11))
+
+# Array -- same as lists
+cars = ["Ford", "Volvo", "BMW"]
+
+print(type(cars))
+
+# Classes and Objects
+
+# Inheritance
+
+# Iterators
+
+# Scope -- local/global
+
+print(10 > 9) # True 
+matrix_2 = [[1,3,2], [1,3,2], [2,3,4], [2,3,5]]
+first_item = matrix_2[0]
+print(first_item) # [1,3,2]
+first_item_first_element = matrix_2[2][2] # or first_item[0]
+print(first_item_first_element) # 1
